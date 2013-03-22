@@ -1,0 +1,33 @@
+ _  _  ___  ___   ___  __  __  _  _  ___ 
+( )( )(  _)(  ,) / __)(  )/  \( \( )/ __)
+ \\//  ) _) )  \ \__ \ )(( () ))  ( \__ \
+ (__) (___)(_)\_)(___/(__)\__/(_)\_)(___/
+
+This is a version sorter that when given two version strings will determine which version string is precedent. It is given here as an exercise in both Java and Ruby.
+
+RUBY=============================================================
+1. From the root level of the project, enter "ruby version_sorter_test.rb"
+2. God ruby is definitely the write tool for this job, look at the painful Java setup below.
+
+JAVA SETUP============================================================
+1. Set your JAVA_HOME (absolutely): "export JAVA_HOME=/usr/java/jdk1.7.0_03"
+2. Navigate to the root level of the project (with the pom.xml)
+
+
+BUILDING JAVA WITH APACHE MAVEN=======================================
+1. Build the project: "mvn clean package", ensure all test cases pass and "BUILD SUCCESS" appears
+2. Set your CLASSPATH (absolutely) to the maven target directory: "export CLASSPATH=/home/coder/workspace/versions/target/classes"
+
+
+BUILDING JAVA WITHOUT APACHE MAVEN====================================
+1. Compile the files with javac: "$JAVA_HOME/bin/javac src/main/java/com/versions/*"
+2. Confirm there are now several class files at src/main/java/com/versions
+3. Set your CLASSPATH (absolutely) to the src directory: "export CLASSPATH=/home/coder/workspace/versions/src/main/java/com/versions"
+
+
+RUNNING THE JAVA APPLICATION==========================================
+1. Ensure that your user has permission to execute calculator shell script ("sudo chmod u+x versiontester")
+2. Run the shell script: "versiontester 1.2.3.a 1.2.2.b"
+
+ASSUMPTIONS/NOTES===============================================
+-Normally I would not do things like System.out.println, System.exit(0), or read file input from an absolute path. I promise I would never do anything like that in production potential code. I also do absolutely zero logging in this application, on purpose. This version sorter was originally built as an exercise for a company I interviewed at.

@@ -6,11 +6,11 @@
         http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.wishabi</groupId>
-	<artifactId>software-challenge</artifactId>
+	<groupId>com.versions</groupId>
+	<artifactId>version-sorter</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Wishabi Software Engineering Screener</name>
+	<name>Version String Sorter</name>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
